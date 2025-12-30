@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "google-dino-game"
+version = "0.1.0"
+description = "Chrome Dino clone built with Pygame."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["pygame>=2.5"]
+
+[project.scripts]
+dino-game = "dino_game:main"
+
+[tool.uv]
+
+[tool.hatch.build.targets.wheel]
+packages = ["dino_game"]
